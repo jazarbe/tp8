@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculadora de edad</h1>
+    <form id="formEdad">
+        <label>Ingresá tu fecha de nacimiento:</label><input type="date" id="fechaNac" required autocomplete="off">
+        <label>Ingresá tu nombre:</label><input type="text" id="nombre" required autocomplete="off">
+        <button type="submit">Calcular</button>
+    </form>
+    <h2 id="resultado"></h2>
+
+    <h1>¿Tenemos fruta?</h1>
+    <form>
+        <label>Ingresá una fruta:</label><input type="text" id="fruta" required autocomplete="off">
+        <button type="submit">Consultar</button>
+    </form>
+
+    <!-- hacer el ej 3 en consola -->
+
+    <!-- ej 4 en consola o html? -->
+
+    <!-- ej 5 en consola -->
+
+    <!-- ej 6 -->
+
+    <h1>Nombres con 'A'</h1>
+    <form>
+        <label>Ingresá nombres separados por comas:</label><input type="text" id="nombres" required autocomplete="off">
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <h1>Reemplazador de palabras</h1>
+    <form>
+        <label>Ingresá un texto:</label><textarea id="cadena" cols="30" rows="10" required></textarea>
+        <label>Ingresá la palabra a reemplazar:</label><input type="text" id="palabra" required autocomplete="off">
+        <label>Ingresá la palabra que la reemplazará:</label><input type="text" id="word" required autocomplete="off">
+        <button type="submit">Reemplazar</button>
+    </form>
+
+    <h1>Cortador de texto</h1>
+    <form>
+        <label>Ingresá un texto:</label><textarea id="texto" cols="30" rows="10" required></textarea>
+        <label>Ingresá la cantidad de caracteres que querés conservar:</label><input type="number" id="num" required autocomplete="off">
+        <button type="submit">Cortar</button>
+    </form>
+
+    <h1>Separador</h1>
+    <form>
+        <label>Ingresá palabras separadas por comas:</label><textarea id="palabras" cols="30" rows="10" required></textarea>
+        <button type="submit">Separar</button>
+    </form>
+
+    <h1>Calculadora de recaudación</h1>
+    <p>Para calcular la recaudación total, debés ingresar tu lista de objetos con este formato: "nombre:total"</p>
+    <p>Ejemplo: Pizza:15.50, Hamburguesa:8.75, Bebidas:4.25</p>
+    <form>
+        <label>Ingresá tu lista (las palabras deben estar separadas por comas):</label><textarea id="lista" cols="30" rows="10" required></textarea>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <script src="ejercicios.js"></script>
+</body>
+</html>

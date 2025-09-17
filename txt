@@ -1,18 +1,8 @@
 <!-- Un <div con id=”resultado”> para mostrar los resultados en cada función manipulando el DOM.
 
-1- Calculadora de edad (js)
-Crear una función que reciba un string con una fecha en formato 'YYYY-MM-DD' y devuelva un número con la edad de la persona.
-Pedir al usuario su nombre y su fecha de nacimiento. Luego, mostrar en la consola un mensaje que diga "Hola [nombre], tienes [edad] años!"
-
 2- Tirando fruta (js)
 Crear un array de strings con 10 frutas y mostrarlo en consola de manera prolija.
 Pedir al usuario una fruta. Buscar la fruta en el array. Si la fruta existe, mostrar un mensaje que diga "Sí, tenemos [fruta]!”. Si no existe, mostrar un mensaje que diga "No, no tenemos [fruta]!"
-
-3- Comparando datos y tipos (js)
-A. Comparar si 10 es igual a '10' con ==
-B. Comparar si 10 es igual a '10' con ===. ¿Qué diferencias encontrás?
-C. ¿De qué tipo de dato es 10.6?
-D. ¿Es cierto que para JavaScript true es == 1? ¿Qué conclusiones podemos obtener?
 
 4- Yo objeto (js)
 Crear un objeto de tipo ciudad con los campos: nombre, fechaFundacion, poblacion, extensión. Recorrer y mostrar todos las claves y valores por separado del objeto ciudad.

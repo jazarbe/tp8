@@ -1,4 +1,4 @@
-// 1
+// #region ej1
 const nombre = document.getElementById("nombre")
 const fechaNac = document.getElementById("fechaNac")
 const resultado = document.getElementById("resultado")
@@ -30,16 +30,67 @@ formEdad.addEventListener('submit', e => {
     }
     else resultado.textContent = `Hola ${nombre.value}, tenés ${edad} año(s)`
 })
+// #endregion
 
-// 2
+// #region ej2
 const frutas = ["banana", "melón", "frutilla", "fruta", "damasco", "tomate", "kiwi", "sandía", "limón", "mora"]
-const fruta = document.getElementById("fruta")
+console.log(frutas)
+const frutaInput = document.getElementById("fruta")
 const resultado2 = document.getElementById("resultado2")
 const formFrutas = document.getElementById('formFrutas')
 
 formFrutas.addEventListener('submit', e => {
-    e.preventDefault
-    console.log(fruta.value)
-    if(frutas.includes(fruta.value)) resultado2.textContent = `Si, tenemos ${fruta.value}`
-    else resultado2.textContent = `No tenemos ${fruta.value}`
+    e.preventDefault()
+    if(frutas.includes(toLowerCase(frutaInput.value))) resultado2.textContent = `Si, tenemos ${frutaInput.value}`
+    else resultado2.textContent = `No tenemos ${frutaInput.value}`
 })
+// #endregion
+
+// #region ej3
+const comp1 = (10 == '10')
+const comp2 = (10 === '10')
+const tipo = 10.6
+const ver = (true == 1)
+console.log(`Ejercicio 3:`, comp1, comp2, typeof tipo, ver)
+// #endregion
+
+// #region ej4
+const ciudad = {
+    id: 0,
+    nombre: 'jazcity',
+    fechaFundacion: new Date(),
+    poblacion: 2,
+    extension: 100
+}
+console.log(ciudad)
+
+// #endregion
+
+// #region ej5
+const arr = [0, 2, 6, 21, 1, 8]
+console.log(doubleArray(arr))
+
+// #endregion
+
+// #region ej6
+const ast = '*'
+for(let i = 1; i <= 5; i++) console.log(ast.repeat(i))
+
+// #endregion
+
+// #region ej7
+function piramide(n) {
+    for (let i = 1; i <= n; i++) {
+      let estrellas = "*".repeat(2 * i - 1);
+      let guiones = "-".repeat(n - i);
+      console.log(guiones + estrellas + guiones);
+    }
+  }
+  piramide(5);  
+
+// #endregion
+
+// #region ej8
+
+
+// #endregion

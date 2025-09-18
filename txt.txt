@@ -1,16 +1,3 @@
-6- Triángulo de asteriscos
-¿Cómo harías para dibujar en la consola el siguiente triángulo de asterisco?
-¿Y este?
-
-7- Nombres con 'A' (js)
-Se debe solicitar al usuario que ingrese una lista de nombres separados por coma.
-Luego, muestra en el DOM los nombres que comienzan con la letra 'A'.
-
-8- Reemplazar Palabras (js)
-Se debe solicitar al usuario que ingrese una cadena de texto, una palabra que
-desea reemplazar y la palabra de reemplazo. Luego, muestra en el DOM la cadena
-resultante después de reemplazar todas las instancias de la palabra especificada.
-
 9- Cortar texto (js)
 Se debe solicitar al usuario que ingrese una cadena de texto y un número. Luego,
 muestra en el DOM una nueva cadena que contenga los primeros caracteres de la

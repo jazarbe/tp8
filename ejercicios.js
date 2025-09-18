@@ -41,7 +41,7 @@ const formFrutas = document.getElementById('formFrutas')
 
 formFrutas.addEventListener('submit', e => {
     e.preventDefault()
-    if(frutas.includes(toLowerCase(frutaInput.value))) resultado2.textContent = `Si, tenemos ${frutaInput.value}`
+    if(frutas.includes(frutaInput.value.toLowerCase())) resultado2.textContent = `Si, tenemos ${frutaInput.value}`
     else resultado2.textContent = `No tenemos ${frutaInput.value}`
 })
 // #endregion
@@ -76,21 +76,51 @@ console.log(doubleArray(arr))
 const ast = '*'
 for(let i = 1; i <= 5; i++) console.log(ast.repeat(i))
 
+piramide(5)
+
 // #endregion
 
 // #region ej7
-function piramide(n) {
-    for (let i = 1; i <= n; i++) {
-      let estrellas = "*".repeat(2 * i - 1);
-      let guiones = "-".repeat(n - i);
-      console.log(guiones + estrellas + guiones);
-    }
-  }
-  piramide(5);  
+const inputNombres = document.getElementById('nombres')
+const formA = document.getElementById("formA")
+const resultado7 = document.getElementById('resultado7')
 
+formA.addEventListener('submit', e => {
+    e.preventDefault()
+    const arrNombres = inputNombres.value.split(',')
+    const nombresConA = arrNombres.filter(nombre => 
+        nombre.trim().toLowerCase().startsWith('a')
+    )
+    if(nombresConA.length > 0) resultado7.textContent = nombresConA.join(', ')
+    else resultado7.textContent = `No hay nombres con "A".`
+})
 // #endregion
 
 // #region ej8
+const texto = document.getElementById("cadena")
+const palabra = document.getElementById("palabra")
+const reemplazo = document.getElementById("word")
+const formReemp = document.getElementById("formReemp")
+const resultado8 = document.getElementById("resultado8")
+
+formReemp.addEventListener('submit', e => {
+    e.preventDefault()
+    resultado8.textContent = texto.value.replace(palabra.value, reemplazo.value)
+})
+
+// #endregion
+
+// #region ej9
+
+
+// #endregion
+
+// #region ej10
+
+
+// #endregion
+
+// #region ej11
 
 
 // #endregion

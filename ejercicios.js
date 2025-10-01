@@ -34,7 +34,6 @@ formEdad.addEventListener('submit', e => {
 
 // #region ej2
 const frutas = ["banana", "melón", "frutilla", "fruta", "damasco", "tomate", "kiwi", "sandía", "limón", "mora"]
-console.log(frutas)
 const frutaInput = document.getElementById("fruta")
 const resultado2 = document.getElementById("resultado2")
 const formFrutas = document.getElementById('formFrutas')
@@ -62,20 +61,20 @@ const ciudad = {
     poblacion: 2,
     extension: 100
 }
-console.log(ciudad)
+console.log(`Ejercicio 4:`, ciudad)
 
 // #endregion
 
 // #region ej5
 const arr = [0, 2, 6, 21, 1, 8]
-console.log(doubleArray(arr))
+console.log(`Ejercicio 5:`, doubleArray(arr))
 
 // #endregion
 
 // #region ej6
 const ast = '*'
+console.log(`Ejercicio 6:`) 
 for(let i = 1; i <= 5; i++) console.log(ast.repeat(i))
-
 piramide(5)
 
 // #endregion
@@ -97,7 +96,7 @@ formA.addEventListener('submit', e => {
 // #endregion
 
 // #region ej8
-const texto = document.getElementById("cadena")
+const cadena = document.getElementById("cadena")
 const palabra = document.getElementById("palabra")
 const reemplazo = document.getElementById("word")
 const formReemp = document.getElementById("formReemp")
@@ -105,22 +104,45 @@ const resultado8 = document.getElementById("resultado8")
 
 formReemp.addEventListener('submit', e => {
     e.preventDefault()
-    resultado8.textContent = texto.value.replace(palabra.value, reemplazo.value)
+    resultado8.textContent = cadena.value.replaceAll(palabra.value, reemplazo.value)
 })
 
 // #endregion
 
 // #region ej9
+const form = document.getElementById("formCorto")
+const texto = document.getElementById("texto")
+const num = document.getElementById("num")
+const resultado9 = document.getElementById('resultado9')
 
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    resultado9.textContent = texto.value.slice(0, num.value)
+})
 
 // #endregion
 
 // #region ej10
+const formSeparador = document.getElementById('formSeparador')
+const palabras = document.getElementById('palabras')
+const resultado10 = document.getElementById('resultado10')
 
+formSeparador.addEventListener('submit', e => {
+    e.preventDefault()
+    let palabrasConGuion = palabras.value.replaceAll(',' , ' -');
+    resultado10.textContent = palabrasConGuion
+})
 
 // #endregion
 
 // #region ej11
+const formRec = document.getElementById('formRec')
+const lista = document.getElementById('lista')
+const resultado11 = document.getElementById('resultado11')
 
+formRec.addEventListener('submit', e => {
+    e.preventDefault()
+    resultado11.textContent = "Recaudación total: $" + separarPrecios(lista.value)
+})
 
 // #endregion
